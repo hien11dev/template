@@ -16,7 +16,7 @@ function slug(text) {
 ```js
 function limitWordCount(text, limit) {
   let words = text.trim().split(/\s+/);
-  if (limit > words.length) {
+  if (limit < words.length) {
     return words.slice(0, limit).join(' ') + '...';
   }
   return text;
